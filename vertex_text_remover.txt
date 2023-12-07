@@ -4,7 +4,7 @@ import bpy
 #This is very annoying for blender since its batch renamer cant rename vertex groups and removing those additions is a pain in the ass>
 #This tool eliminates that pain
 #
-#First and foremost make a backup of your blend since this not work or work differently inn future blender versions or somehow not at all
+#First and foremost make a backup of your blend since this might work differently in future blender versions or somehow not at all.
 #
 #Just throw this on the text editor
 #Select your object
@@ -24,6 +24,7 @@ def remove_string_from_vertex_groups(obj_name, string_to_remove):
 selected_obj = bpy.context.object
 
 #input the text to remove between the ""
+
 if selected_obj:
     string_to_remove = ""
     
